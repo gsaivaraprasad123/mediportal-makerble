@@ -241,8 +241,4 @@ This project is under [MIT License](LICENSE).
 Maintained by **Sai Vara Prasad**
 [GitHub](https://github.com/gsaivaraprasad123) • [LinkedIn](https://www.linkedin.com/in/sai-vara-prasad-gandhe-83056a278/)
 
-```
 
----
-
-```
