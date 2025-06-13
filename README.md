@@ -226,7 +226,7 @@ No manual loading is needed — it's used inside Docker.
 
 ## 📽 Demo Video
 
-[🔗 Watch Demo](https://example.com/video-demo) 
+[🔗 Watch Demo](https://drive.google.com/file/d/1_smHP-vOE7uB-pdwRMvY_8Wmuwchbgup/view?usp=drive_link) 
 
 
 ---
