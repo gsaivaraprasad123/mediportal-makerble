@@ -228,11 +228,6 @@ No manual loading is needed — it's used inside Docker.
 
 [🔗 Watch Demo](https://example.com/video-demo) 
 
----
-
-## 📄 License
-
-This project is under [MIT License](LICENSE).
 
 ---
 
