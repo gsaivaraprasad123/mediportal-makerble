@@ -33,6 +33,24 @@ func GetAllPatients(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"patients": patients})
 }
 
+func GetPatientByID(c *gin.Context) {
+	id := c.Param("id")
+
+	// Validate if the ID is a valid UUID
+	if _, err := uuid.Parse(id); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"error": "Invalid patient ID format"})
+		return
+	}
+
+	var patient models.Patient
+	if err := config.DB.First(&patient, "id = ?", id).Error; err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"error": "Patient not found"})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"patient": patient})
+}
+
 func UpdatePatient(c *gin.Context) {
 	id := c.Param("id")
 	var patient models.Patient
