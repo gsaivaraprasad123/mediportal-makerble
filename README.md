@@ -38,14 +38,24 @@ docker run -p 8080:8080 \
 
 ```
 mediportal/
+├── cmd/                # App entry point (main.go)
+│   └── main.go
+├── config/             # env loading, DB config
+├── controllers/        # HTTP handlers
+├── routes/             # All route group definitions
+├── middleware/         # JWT Auth, logging, recovery
+├── models/             # Structs and GORM models
+├── repository/         # DB logic (repository pattern)
+├── services/           # Business logic (use-cases)
+├── utils/              # Common utilities
+├── docs/               # Swagger / Postman JSON
+├── test/               # Unit and integration tests
 ├── Dockerfile
 ├── docker-compose.yml
+├── go.mod / go.sum
 ├── .env
-├── main.go
-├── controllers/
-├── models/
-├── routes/
-└── utils/
+└── README.md
+
 ```
 
 ---
